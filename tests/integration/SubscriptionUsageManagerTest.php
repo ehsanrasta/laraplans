@@ -1,6 +1,6 @@
 <?php
 
-namespace Gerarodjbaez\Laraplans\Tests\Integration;
+namespace EhsanRasta\Laraplans\Tests\Integration;
 
 use EhsanRasta\Laraplans\Models\Plan;
 use EhsanRasta\Laraplans\Tests\TestCase;

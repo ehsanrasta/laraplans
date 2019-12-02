@@ -1,6 +1,6 @@
 <?php
 
-namespace Gerarodjbaez\Laraplans\Tests\Integration\Models;
+namespace EhsanRasta\Laraplans\Tests\Integration\Models;
 
 use Config;
 use Carbon\Carbon;

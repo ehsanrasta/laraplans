@@ -1,6 +1,6 @@
 <?php
 
-namespace Gerarodjbaez\Laraplans\Unit;
+namespace EhsanRasta\Laraplans\Unit;
 
 use EhsanRasta\Laraplans\Period;
 use EhsanRasta\Laraplans\Tests\TestCase;
