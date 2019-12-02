@@ -49,8 +49,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Laraplans'
-copyright = u'2018, Gerardo J. Báez'
-author = u'Gerardo J. Báez'
+copyright = u'2018, Ehsan Rasta'
+author = u'Ehsan Rasta'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -260,7 +260,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'Laraplans.tex', u'Laraplans Documentation',
-     u'Gerardo J. Báez', 'manual'),
+     u'Ehsan Rasta', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

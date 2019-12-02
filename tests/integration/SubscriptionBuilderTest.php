@@ -18,8 +18,8 @@ class SubscriptionBuilderTest extends TestCase
     public function it_can_create_new_subscriptions()
     {
         $user = User::create([
-            'email' => 'gerardo@email.dev',
-            'name' => 'Gerardo',
+            'email' => 'ehsan@email.dev',
+            'name' => 'Ehsan',
             'password' => 'password'
         ]);
 

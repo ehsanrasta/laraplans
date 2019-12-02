@@ -20,8 +20,8 @@ class SubscriptionUsageMangerTest extends TestCase
     public function it_can_record_usage()
     {
         $user = User::create([
-            'email' => 'gerardo@email.dev',
-            'name' => 'Gerardo',
+            'email' => 'ehsan@email.dev',
+            'name' => 'Ehsan',
             'password' => 'password'
         ]);
 
