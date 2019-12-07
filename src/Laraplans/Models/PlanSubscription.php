@@ -90,7 +90,7 @@ class PlanSubscription extends Model implements PlanSubscriptionInterface
         static::saving(function ($model) {
             // Set period if it wasn't set
             if (! $model->ends_at) {
-                $model->setNewPeriod();
+                $model->setNewPeriod('', '',$model->starts_at ?? '');
             }
         });
 
