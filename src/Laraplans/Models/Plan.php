@@ -20,6 +20,7 @@ class Plan extends Model implements PlanInterface
         'name',
         'description',
         'price',
+        'currency',
         'interval',
         'interval_count',
         'trial_period_days',
