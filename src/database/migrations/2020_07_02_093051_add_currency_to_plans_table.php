@@ -14,7 +14,7 @@ class AddCurrencyToPlansTable extends Migration
     public function up()
     {
         Schema::table('plans', function (Blueprint $table) {
-            //
+            $table->string('currency')->nullable();
         });
     }
 
@@ -26,7 +26,7 @@ class AddCurrencyToPlansTable extends Migration
     public function down()
     {
         Schema::table('plans', function (Blueprint $table) {
-            //
+            $table->dropColumn('currency');
         });
     }
 }
