@@ -14,7 +14,7 @@ class ExtemdPlanPriceDecimalOfPlansTable extends Migration
     public function up()
     {
         Schema::table('plans', function (Blueprint $table) {
-            $table->decimal('price', 15, 4)->default('0.00')->chnage();
+            $table->decimal('price', 15, 4)->default('0.00')->change();
         });
     }
 
