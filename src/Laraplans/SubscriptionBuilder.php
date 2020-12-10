@@ -92,14 +92,17 @@ class SubscriptionBuilder implements SubscriptionBuilderInterface
      */
     public function create(array $attributes = [])
     {
-        $now = Carbon::now();
+        $startDate = Carbon::now();
+        if(isset($attributes['starts_at'])){
+            $startDate = $attributes['starts_at'];
+        }
 
         if ($this->skipTrial) {
             $trialEndsAt = null;
         } elseif ($this->trialDays) {
-            $trialEndsAt = ($this->trialDays ? $now->addDays($this->trialDays) : null);
+            $trialEndsAt = ($this->trialDays ? $startDate->copy()->addDays($this->trialDays) : null);
         } elseif ($this->plan->hasTrial()) {
-            $trialEndsAt = $now->addDays($this->plan->trial_period_days);
+            $trialEndsAt = $startDate->copy()->addDays($this->plan->trial_period_days);
         } else {
             $trialEndsAt = null;
         }
