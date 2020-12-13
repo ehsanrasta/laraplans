@@ -5,7 +5,7 @@ namespace EhsanRasta\Laraplans\Models;
 use EhsanRasta\Laraplans\Period;
 use Illuminate\Database\Eloquent\Model;
 use EhsanRasta\Laraplans\Contracts\PlanInterface;
-use EhsanRasta\LaraPlans\Exceptions\InvalidPlanFeatureException;
+use EhsanRasta\Laraplans\Exceptions\InvalidPlanFeatureException;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Plan extends Model implements PlanInterface
